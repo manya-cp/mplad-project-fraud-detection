@@ -85,11 +85,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ navigate }) => {
             <div className="lg:col-span-5">
               <div className="relative rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md bg-white dark:bg-slate-900">
                 <img
-                  src="/src/assets/images/hero_infrastructure_1791899332798.jpg"
-                  alt="Rural road and bridge public infrastructure development connecting villages in India"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-80 sm:h-96 object-cover"
-                />
+src="/images/hero_infrastructure_1791899332798.jpg"
+alt="Rural road and bridge public infrastructure development connecting villages in India"
+className="w-full h-80 sm:h-96 object-cover"
+/>
+
                 <div className="p-3 bg-white/95 dark:bg-slate-900/95 border-t border-slate-200 dark:border-slate-800">
                   <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
                     <span className="font-medium text-slate-700 dark:text-slate-300">
