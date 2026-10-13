@@ -1,0 +1,6 @@
+{
+  "name": "MPLAD Project Fraud Detection System",
+  "description": "Transparent monitoring and financial irregularity detection platform for Members of Parliament Local Area Development Scheme (MPLADS) projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
