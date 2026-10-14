@@ -876,12 +876,17 @@ app.post('/api/reports/:id/email', optionalAuth, async (req: AuthRequest, res: R
 
     // Configure Nodemailer transporter
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: GMAIL_USER,
-        pass: GMAIL_APP_PASSWORD.replace(/\s+/g, ''),
-      },
-    });
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    user: GMAIL_USER,
+    pass: GMAIL_APP_PASSWORD.replace(/\s+/g, ''),
+  },
+  connectionTimeout: 15000,
+  greetingTimeout: 15000,
+  socketTimeout: 20000,
+});
 
     const mailOptions: any = {
       from: `"MPLAD Project Audit System" <${GMAIL_USER}>`,
